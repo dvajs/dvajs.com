@@ -1,0 +1,39 @@
+@import "./partials/layout";
+@import "./partials/github-markdown";
+@import "./partials/highlight";
+
+.page {
+  margin-top: 60px;
+
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .sidebar {
+    width: 220px;
+    min-width: 220px;
+  }
+  .content {
+    float: right;
+    width: 100%;
+    max-width: 730px;
+  }
+}
+
+.sidebar {
+  line-height: 1.5;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

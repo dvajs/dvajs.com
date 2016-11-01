@@ -1,0 +1,24 @@
+<% var isIndex = page.path === 'index.html' %>
+<!doctype html>
+<html lang="en">
+<head>
+  <title><%- page.title ? page.title + ' - ' : '' %>vue.js</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="<%- theme.site_description %>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script>
+    window.PAGE_TYPE = "<%- page.type %>";
+  </script>
+  <%- css('css/normalize.css') %>
+  <%- css(isIndex ? 'css/index' : 'css/page') %>
+</head>
+<body>
+
+  <%- partial('partials/header') %>
+
+  <%- body %>
+
+  <%- partial('partials/footer') %>
+
+</body>
+</html>
