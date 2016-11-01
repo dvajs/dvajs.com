@@ -1,6 +1,6 @@
 # dvajs.com
 
-The website of dva, built with [hexo])(https://github.com/hexojs/hexo).
+The website of dva, built with [hexo](https://github.com/hexojs/hexo).
 
 ## Get Start
 
